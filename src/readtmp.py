@@ -1,5 +1,6 @@
 # Read temperature of respberry machine.
 
+import commands
 def get_cpu_temp():  
     tempFile = open( "/sys/class/thermal/thermal_zone0/temp" )  
     cpu_temp = tempFile.read()  
